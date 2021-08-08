@@ -1,5 +1,5 @@
 import Layout from "components/layout/Layout"
-import Homepage from "components/webPages/home/Home"
+import Homepage from "components/webPages/index/Index"
 
 const Home = () => {
   return (
@@ -10,6 +10,7 @@ const Home = () => {
       url=""
       showHeader={ true }
       showFooter={ true }
+      
     >
       <Homepage />
     </Layout>

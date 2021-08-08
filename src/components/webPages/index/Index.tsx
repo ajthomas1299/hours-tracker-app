@@ -1,4 +1,4 @@
-const Home = () => {
+const Index = () => {
   return (
     <div>
       <h1>I am the homepage</h1>
@@ -6,4 +6,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Index
