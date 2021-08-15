@@ -84,8 +84,8 @@ const Layout = ({ children, title, description, showHeader, showFooter, ogImage,
         content={'Portfolio Sven'}
       />
       </Head>
-      <div>
-        <div>
+      <div className="h-screen flex flex-col">
+        <div className="flex-1">
           { showHeader ? <Header /> : null }
           { children }
         </div>

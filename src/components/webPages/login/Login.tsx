@@ -2,8 +2,9 @@ import React from 'react'
 
 const Login = () => {
   return (
-    <div className="bg-white p-10 rounded-lg shadow-md ">
-    <h1 className="text-xl font-bold">Jump back in!</h1>
+    <div className="grid place-items-center h-screen">
+    <div className="flex justify-center flex-col items-center bg-white p-10 rounded-lg shadow-md ">
+    {/* <h1 className="text-xl font-bold">Jump back in!</h1>
     <div className="mt-4 mb-10">
       <p className="text-gray-600">Course 75% completed</p>
       <div className="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden">
@@ -16,7 +17,8 @@ const Login = () => {
       <br />
       (Challenge)
     </h2>
-    <button className="bg-orange-400 py-3 px-8 mt-4 rounded text-sm font-semibold hover:bg-opacity-75">Go to lesson</button>
+    <button className="bg-orange-400 py-3 px-8 mt-4 rounded text-sm font-semibold hover:bg-opacity-75">Go to lesson</button> */}
+  </div>
   </div>
   )
 }

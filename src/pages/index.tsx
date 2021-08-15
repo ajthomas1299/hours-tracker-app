@@ -9,8 +9,7 @@ const Home = () => {
       ogImage=""
       url=""
       showHeader={ true }
-      showFooter={ true }
-      
+      showFooter={ true } 
     >
       <Homepage />
     </Layout>
