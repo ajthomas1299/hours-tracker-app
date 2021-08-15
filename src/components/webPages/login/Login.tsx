@@ -1,10 +1,12 @@
-import React from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
   return (
     <div className="grid place-items-center h-screen">
-      <div className="flex justify-center flex-col items-center bg-white p-10 rounded-lg shadow-md ">
-        <form className="block">
+      <div className="flex justify-center flex-col items-center bg-white p-10 rounded-lg shadow-md">
+        <h1>Hello you there does it work</h1>
+        <form>
           <legend>Sign Up</legend>
           <section className="flex flex-col">
             <label htmlFor="firstname">Firstname:</label>
@@ -26,7 +28,10 @@ const Login = () => {
             <label htmlFor="password2">Confirm Password:</label>
             <input type="password" name="password2" id="password2" className="form-input px-1 py-1 rounded border" />
           </section>
-          
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Button
+          </button>
+
         </form>
       </div>
     </div>
