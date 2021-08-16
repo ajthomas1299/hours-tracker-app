@@ -1,5 +1,6 @@
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { SignUpForm } from 'data/account/signUpForm';
 
 const Login = () => {
   return (
@@ -8,7 +9,18 @@ const Login = () => {
         <h1>Hello you there does it work</h1>
         <form>
           <legend>Sign Up</legend>
-          <section className="flex flex-col">
+          {
+            SignUpForm.map( item => (
+              <section 
+                key={item.id}
+                className="flex flex-col"
+              >
+                <label htmlFor={item.nameId}>{item.nameTitle}:</label>
+                <input type={item.type} name={item.nameId} id={item.nameId} placeholder={item.placeholder} />
+              </section>
+            ))
+          }
+          {/* <section className="flex flex-col">
             <label htmlFor="firstname">Firstname:</label>
             <input type="text" name="firstname" id="firstname" className="form-input px-1 py-1 rounded border" placeholder="John" />
           </section>
@@ -22,12 +34,12 @@ const Login = () => {
           </section>
           <section className="flex flex-col">
             <label htmlFor="password">Password:</label>
-            <input type="password" name="password" id="password" className="form-input px-1 py-1 rounded border" />
+            <input type="password" name="password" id="password" className="form-input px-1 py-1 rounded border" placeholder="Enter Password" />
           </section>
           <section className="flex flex-col">
             <label htmlFor="password2">Confirm Password:</label>
-            <input type="password" name="password2" id="password2" className="form-input px-1 py-1 rounded border" />
-          </section>
+            <input type="password" name="password2" id="password2" className="form-input px-1 py-1 rounded border" placeholder="Confirm Password" />
+          </section> */}
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             Button
           </button>

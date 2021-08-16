@@ -1,10 +1,10 @@
 import Layout from "components/layout/Layout"
-import LoginPage from "components/webPages/login/Login"
+import SignUpPage from "components/webPages/account/SignUp"
 
 const Login = () => {
   return (
     <Layout
-      title="Login | TrackerApp"
+      title="SignUp | TrackerApp"
       description=""
       ogImage=""
       url=""
@@ -12,7 +12,7 @@ const Login = () => {
       showFooter={ false }
       
     >
-      <LoginPage />
+      <SignUpPage />
     </Layout>
   )
 }

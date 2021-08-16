@@ -1,3 +1,3 @@
 export interface ISingleLinks {
-  home: string,
+  home: string
 }

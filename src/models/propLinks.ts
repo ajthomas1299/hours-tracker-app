@@ -1,4 +1,4 @@
 export interface IPropLinks {
- children: React.ReactNode,
+ children: React.ReactNode
  href: string
 }
