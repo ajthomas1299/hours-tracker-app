@@ -31,16 +31,16 @@ export const SignUpForm: ISignUpForm[] = [
   },
   {
     id: 4,
-    nameId: "password",
-    nameTitle: "Password",
-    type: "password",
+    nameId: "new-password",
+    nameTitle: "Create Password",
+    type: "new-password",
     placeholder: "John-Doe-123?"
   },
   {
     id: 5,
-    nameId: "password2",
+    nameId: "current-password",
     nameTitle: "Confirm Password",
-    type: "password",
+    type: "current-password",
     placeholder: "John-Doe-123?"
   },
 ]
