@@ -1,13 +1,23 @@
 /* --- base --- */
 @tailwind base;
 
+@layer base {
+  legend {
+    @apply flex justify-center mb-8 font-extrabold text-3xl text-purple-700;
+  }
+
+  label {
+    @apply block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2;
+  }
+}
+
 
 /* --- components --- */
 @tailwind components;
 
 @layer components {
   input {
-    @apply form-input px-1 py-1 rounded border;
+    @apply appearance-none block max-w-xl bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500;
   }
 }
 

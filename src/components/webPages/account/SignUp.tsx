@@ -5,15 +5,15 @@ import { SignUpForm } from 'data/account/signUpForm';
 const Login = () => {
   return (
     <div className="grid place-items-center h-screen">
-      <div className="flex justify-center flex-col items-center bg-white p-10 rounded-lg shadow-md">
-        <h1>Hello you there does it work</h1>
-        <form autoComplete="on">
+      <div className="flex justify-center flex-col items-center bg-white py-10 px-40 rounded-lg shadow-md">
+        <form autoComplete="on" className="w-screen max-w-lg">
           <legend>Sign Up</legend>
           {
             SignUpForm.map( item => (
               <section 
                 key={item.id}
-                className="flex flex-col"
+                className="flex flex-col w-full"
+
               >
                 <label 
                   htmlFor={item.nameId}
