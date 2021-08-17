@@ -2,7 +2,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { SignUpForm } from 'data/account/signUpForm';
 
-const Login = () => {
+const SignUp = () => {
   return (
     <div className="grid place-items-center h-screen">
       <div className="flex justify-center flex-col items-center bg-white py-10 px-40 rounded-lg shadow-md">
@@ -29,8 +29,8 @@ const Login = () => {
               </section>
             ))
             }          
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Button
+          <button className="btn">
+            Sign Up
           </button>
 
         </form>
@@ -39,4 +39,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default SignUp
