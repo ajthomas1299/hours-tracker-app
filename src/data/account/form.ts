@@ -1,6 +1,6 @@
-import { ISignUpForm } from "models/account/signUpForm"
+import { IForm } from "models/account/form"
 
-export const SignUpForm: ISignUpForm[] = [
+export const signUp: IForm[] = [
   {
     id: 0,
     nameId: "firstname",
@@ -17,7 +17,7 @@ export const SignUpForm: ISignUpForm[] = [
   },
   {
     id: 2,
-    nameId: "username",
+    nameId: "enter username",
     nameTitle: "Username",
     type: "text",
     placeholder: "John-1955"
@@ -40,6 +40,23 @@ export const SignUpForm: ISignUpForm[] = [
     id: 5,
     nameId: "current-password",
     nameTitle: "Confirm Password",
+    type: "current-password",
+    placeholder: "John-Doe-123?"
+  },
+]
+
+export const login: IForm[] = [
+  {
+    id: 1,
+    nameId: "enter username",
+    nameTitle: "Username",
+    type: "text",
+    placeholder: "John-1955"
+  },
+  {
+    id: 5,
+    nameId: "current-password",
+    nameTitle: "Password",
     type: "current-password",
     placeholder: "John-Doe-123?"
   },

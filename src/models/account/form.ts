@@ -1,4 +1,4 @@
-export interface ISignUpForm {
+export interface IForm {
   id: number
   nameId: string
   nameTitle: string

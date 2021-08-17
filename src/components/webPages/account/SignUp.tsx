@@ -1,19 +1,18 @@
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { SignUpForm } from 'data/account/signUpForm';
+import { signUp } from 'data/account/form';
 
 const SignUp = () => {
   return (
-    <div className="grid place-items-center h-screen">
-      <div className="flex justify-center flex-col items-center bg-white py-10 px-40 rounded-lg shadow-md">
-        <form autoComplete="on" className="w-screen max-w-lg">
+    <div className="grid place-items-center h-screen bg-gray-100">
+      <div className="w-full max-w-s">
+        <form autoComplete="on">
           <legend>Sign Up</legend>
           {
-            SignUpForm.map( item => (
+            signUp.map( item => (
               <section 
                 key={item.id}
                 className="flex flex-col w-full"
-
               >
                 <label 
                   htmlFor={item.nameId}
