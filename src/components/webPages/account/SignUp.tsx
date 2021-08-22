@@ -17,7 +17,7 @@ const SignUp = () => {
                 <label 
                   htmlFor={item.nameId}
                 >
-                  {item.nameTitle}:
+                  {item.nameTitle}
                 </label>
                 <input 
                   type={item.type} 
