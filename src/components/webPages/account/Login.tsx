@@ -1,12 +1,19 @@
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { login } from 'data/account/form';
+import { images } from "data/images"
+
 
 const Login = () => {
 const notify = () => toast("Logging in");
 
+//
+const { logo1 } = images;
+
+
   return (
     <div className="grid place-items-center h-screen bg-gray-100">
+    <img src={logo1} className="w-28 "/>
     <div className="w-full max-w-xs">
       <form>
         <legend>Login</legend>

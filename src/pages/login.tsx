@@ -1,8 +1,14 @@
 import Layout from "components/layout/Layout"
 import LoginPage from "components/webPages/account/Login"
 
+
 const Login = () => {
+  //
+
+
+  ////
   return (
+    
     <Layout
       title="Login | TrackerApp"
       description=""
@@ -12,8 +18,10 @@ const Login = () => {
       showFooter={ false }
       
     >
+      
       <LoginPage />
     </Layout>
+    
   )
 }
 
