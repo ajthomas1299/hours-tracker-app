@@ -32,7 +32,7 @@ const { logo1 } = images;
         Login
       </button>
       <ToastContainer />
-      <a className="inline-block mt-2 align-baseline font-bold text-sm text-purple-500 hover:text-purple-800" href="#">
+      <a className="inline-block mt-2 align-baseline font-bold text-sm text-purple-500 hover:text-purple-800"  href="#">
         Forgot Password?
       </a>
     </div>

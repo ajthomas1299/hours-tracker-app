@@ -1,5 +1,5 @@
 /* --- base --- */
-@tailwind base;
+ @tailwind base;
 @layer base {
   legend {
     @apply flex justify-center mb-5 font-extrabold text-3xl text-purple-700;
@@ -12,6 +12,7 @@
 
 
 /* --- components --- */
+
 @tailwind components;
 @layer components {
   input {
@@ -19,7 +20,7 @@
   }
 
   .btn {
-    @apply w-full bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 rounded;
+    @apply w-full bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 rounded; 
   }
 
   form {
@@ -28,11 +29,12 @@
 }
 
 /* --- utilities --- */
+
 @tailwind utilities;
 
   @layer utilities {
     input {
     focus:shadow-outline;
     }
-  }
+  } 
 

@@ -4,12 +4,12 @@ import Homepage from "components/webPages/index/Index"
 const Home = () => {
   return (
     <Layout
-      title="Main | TrackerApp"
+      title="Main Menu | TrackerApp"
       description="Information about the Tracker App."
       ogImage=""
       url=""
-      showHeader={ true }
-      showFooter={ true } 
+      showHeader={ false }
+      showFooter={ false } 
     >
       <Homepage />
     </Layout>
