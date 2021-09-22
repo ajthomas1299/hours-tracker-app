@@ -3,37 +3,37 @@ import { IMainBtns } from "models/mainMenu"
 export const MainBtns: IMainBtns[] = [
   {
     id: 1,
-    link: "./hoursTracker",
+    link: "/hoursTracker",
     text: "Hours Tracker" 
   },
   {
     id: 2,
-    link: "./ViewSessions", 
+    link: "/viewSessions", 
     text: "View Sessions"
   },
   {
     id: 3,
-    link: "./Reports",
+    link: "/reports",
     text: "Reports" 
   },
   {
     id: 4,
-    link: "./Pomodoro Timer",
+    link: "/pomodoro",
     text: "Pomodoro Timer" 
   },
   {
     id: 5,
-    link: "./AddClient",
+    link: "/addClient",
     text: "Add Client" 
   },
   {
     id: 6,
-    link: "./AddProject",
+    link: "/addProject",
     text: "Add Project" 
   },
   {
     id: 7,
-    link: "./AddTask",
+    link: "/addTask",
     text: "Add Task"
   },
 ]
