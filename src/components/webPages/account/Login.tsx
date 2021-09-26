@@ -1,10 +1,12 @@
+import React, { useContext } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { login } from 'data/account/form';
 import { images } from "data/images"
 
-
 const Login = () => {
+
+
 const notify = () => toast("Logging in");
 
 //
@@ -13,7 +15,7 @@ const { logo1 } = images;
 
   return (
     <div className="grid place-items-center h-screen bg-gray-100">
-    <img src={logo1} className="w-28 "/>
+    <img src={logo1} className="w-4/5 "/>
     <div className="w-full max-w-xs">
       <form>
         <legend>Login</legend>
@@ -32,7 +34,7 @@ const { logo1 } = images;
         Login
       </button>
       <ToastContainer />
-      <a className="inline-block mt-2 align-baseline font-bold text-sm text-purple-500 hover:text-purple-800"  href="#">
+      <a className="inline-block mt-2 align-baseline font-bold text-sm text-purple-800 hover:text-purple-800"  href="#">
         Forgot Password?
       </a>
     </div>
