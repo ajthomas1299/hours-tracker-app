@@ -6,21 +6,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        emerald: colors.emerald,
-        fuchsia: colors.fuchsia,
         red: {
-          'red-primary': '#93043B',
-        }
-        // 'th-text-red': ,
-        // 'th-background': 'var(--background)',
-        // 'th-background-secondary': 'var(--background-secondary)',
-        // 'th-foreground': 'var(--foreground)',
-        // 'th-primary-dark': 'var(--primary-dark)',
-        // 'th-primary-medium': 'var(--primary-medium)',
-        // 'th-primary-light': 'var(--primary-light)',
-        // 'th-accent-dark': 'var(--accent-dark)',
-        // 'th-accent-medium': 'var(--accent-medium)',
-        // 'th-accent-light': 'var(--accent-light)',
+          light: 'var(--red-light)',
+          default: 'var(--red-default)',
+          dark: 'var(--red-dark)',
+        },
+        gray: {
+          light: 'var(--gray-light)',
+          default: 'var(--gray-default)',
+          dark: 'var(--gray-dark)',
+        },
+        black: 'var(--black)',
+        white: 'var(--white)',
       },
     },
   },

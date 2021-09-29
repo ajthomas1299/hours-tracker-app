@@ -18,7 +18,7 @@ const { logo1 } = images;
     <img src={logo1} className="w-4/5 "/>
     <div className="w-full max-w-xs">
       <form>
-        <legend>Login</legend>
+        <legend>log in</legend>
         {
           login.map( item => (
             <section key={item.id}>
@@ -34,7 +34,7 @@ const { logo1 } = images;
         Login
       </button>
       <ToastContainer />
-      <a className="inline-block mt-2 align-baseline font-bold text-sm text-purple-800 hover:text-purple-800"  href="#">
+      <a className="inline-block mt-2 align-baseline font-bold text-sm text-red-light hover:text-red-dark"  href="#">
         Forgot Password?
       </a>
     </div>

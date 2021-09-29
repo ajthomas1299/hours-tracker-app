@@ -5,7 +5,7 @@ import ThemeChanger from 'components/layout/ThemeChanger'
 const Index = () => {
   return(
     <div className="flex flex-col items-center h-screen w-full">
-      <div className="flex w-screen text-red-red-primary font-semibold text-xl justify-center items-center h-12 bg-indigo-800">
+      <div className="flex w-screen text-white font-semibold text-xl justify-center items-center h-12 bg-black">
         <h1>Home Menu</h1>
       </div>
       {/* <ThemeChanger /> */}

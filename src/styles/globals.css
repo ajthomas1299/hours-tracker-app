@@ -1,70 +1,26 @@
 /* ./styles/globals.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --text-color: theme('colors.red.800');
-  --background: theme("colors.white");
-  --background-secondary: theme("colors.gray.50");
-
-  --primary-dark: theme("colors.gray.900");
-  --primary-medium: theme("colors.gray.700");
-  --primary-light: theme("colors.gray.500");
+  /* Colors */
+  --red-light: #d30051;
+  --red-default: #93043B;
+  --red-dark: #75002d;
+  --gray-light: #c8c8c8;
+  --gray-default: #959595;
+  --gray-dark: #5d5d5d;
+  --black: #000;
+  --white: #fff;
 }
-
-[data-theme="dark"] {
-  --background: theme("colors.black");
-  --background-secondary: theme("colors.gray.800");
-
-  --accent-dark: theme("colors.fuchsia.900");
-  --accent-medium: theme("colors.fuchsia.700");
-  --accent-light: theme("colors.fuchsia.500");
-
-  --primary-dark: theme("colors.gray.300");
-  --primary-medium: theme("colors.gray.200");
-  --primary-light: theme("colors.gray.100");
-}
-
-[data-theme="emerald"] {
-  --background: theme("colors.white");
-
-  --accent-dark: theme("colors.emerald.900");
-  --accent-medium: theme("colors.emerald.700");
-  --accent-light: theme("colors.emerald.500");
-}
-
-[data-theme="pink"] {
-  --background: theme("colors.gray.900");
-  --background-secondary: theme("colors.gray.800");
-
-  --accent-dark: theme("colors.pink.900");
-  --accent-medium: theme("colors.pink.700");
-  --accent-light: theme("colors.pink.500");
-
-  --primary-dark: theme("colors.gray.300");
-  --primary-medium: theme("colors.gray.200");
-  --primary-light: theme("colors.gray.100");
-}
-
-
-/* :root {
-  --color-primary: #93043B;
-}
-
 
  @tailwind base;
 @layer base {
   legend {
-    @apply flex justify-center mb-5 font-extrabold text-3xl text-purple-700;
+    @apply flex justify-center mb-5 font-extrabold text-3xl text-red-dark uppercase;
   }
 
   label {
-    @apply block uppercase text-gray-700 text-sm font-bold mb-2;
+    @apply block uppercase text-gray-dark text-sm font-bold mb-2;
   }
 }
-
-
 
 @tailwind components;
 @layer components {
@@ -73,15 +29,13 @@
   }
 
   .btn {
-    @apply w-full bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 rounded; 
+    @apply w-full bg-red-dark hover:bg-red-light uppercase text-white font-bold py-2 rounded; 
   }
 
   form {
     @apply bg-white shadow-md rounded p-5 m-2 ;
   }
 }
-
-
 
 @tailwind utilities;
 
@@ -90,4 +44,4 @@
     focus:shadow-outline;
     }
   } 
- */
+
