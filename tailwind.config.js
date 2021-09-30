@@ -4,6 +4,13 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false,
   theme: {
+    screens: {
+      'sm': {'min': '320px', 'max': '640px'},
+      'md': '960px',
+      'lag': '1025px',
+      'xll': '1500px',
+      '2xl': '1920px',
+    },
     extend: {
       colors: {
         red: {
