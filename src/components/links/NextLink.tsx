@@ -5,7 +5,7 @@ const NextLink = ( { children, href }: IPropLinks ) => {
 
   return (
     <Link href={ href }>
-      <a className="w-2/3 text-center text-white bg-red-dark hover:bg-red-light py-2 rounded shadow-lg">
+      <a className="w-2/3 text-center text-white bg-red-dk hover:bg-red-li py-2 rounded shadow-lg">
         { children }
       </a> 
     </Link>

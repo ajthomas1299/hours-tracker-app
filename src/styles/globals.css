@@ -14,11 +14,11 @@
  @tailwind base;
 @layer base {
   legend {
-    @apply flex justify-center mb-5 font-extrabold text-3xl text-black sm:text-gray-light md:text-red-dark uppercase;
+    @apply flex justify-center mb-5 font-extrabold text-3xl portrait:text-blue sm:text-green  md:text-red-dk uppercase;
   }
 
   label {
-    @apply block uppercase text-gray-dark text-sm font-bold mb-2;
+    @apply block uppercase text-gray-dk text-sm font-bold mb-2;
   }
 }
 
@@ -29,11 +29,15 @@
   }
 
   .btn {
-    @apply w-full bg-red-dark hover:bg-red-light uppercase text-white font-bold py-2 rounded; 
+    @apply w-full bg-red-dk hover:bg-red-li uppercase text-black font-bold py-2 rounded; 
   }
 
   form {
-    @apply bg-white shadow-md rounded p-5 m-2 ;
+    @apply bg-white shadow-md rounded p-5 m-2;
+  }
+
+  select{
+    @apply border-2 border-gray-dk w-tq text-2xl;
   }
 }
 
