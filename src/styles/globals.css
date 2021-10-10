@@ -14,7 +14,7 @@
  @tailwind base;
 @layer base {
   legend {
-    @apply flex justify-center mb-5 font-extrabold text-3xl portrait:text-blue sm:text-green  md:text-red-dk uppercase;
+    @apply flex justify-center mb-5 font-extrabold text-3xl text-blue sm:text-green  md:text-red-dk uppercase;
   }
 
   label {

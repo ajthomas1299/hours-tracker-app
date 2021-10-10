@@ -4,11 +4,18 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'sm': '640px',
-        'md': '960px',
-        'lg': '1300px',
-        'xl': '1920px',
-        'portrait': {'raw': '(orientation: portrait)'},
+        'sml': { 
+          'min': '1px', 
+          'orientation': 'landscape' 
+        },
+        'md': '640px',
+        'mdl': { 
+          'min': '960px', 
+          'orientation': 'landscape' 
+        },
+        'lg': '960px',
+        'xl': '1250px',
+        'xxl': '1600px',
       },
       colors: {
         red: {
