@@ -15,9 +15,9 @@ const { logo1 } = images;
 
   return (
     <div className="grid place-items-center h-screen bg-gray-100">
-    <img src={logo1} className="w-4/5 "/>
-    <div className="w-full max-w-xs">
-      <form>
+    <img src={ logo1 } className="w-80 sml:hidden"/>
+    {/* <div className="w-full h-full max-w-xs"> */}
+      <div className="w-full h-full flex flex-col sml:justify-center max-w-xs mb-7 sml:mb-0">
         <legend>log in</legend>
         {
           login.map( item => (
@@ -38,8 +38,8 @@ const { logo1 } = images;
         Forgot Password?
       </a>
     </div>
-  </form>
-    </div>
+  </div>
+    {/* </div> */}
     </div>
   )
 }

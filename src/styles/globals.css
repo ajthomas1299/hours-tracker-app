@@ -14,7 +14,7 @@
  @tailwind base;
 @layer base {
   legend {
-    @apply flex justify-center mb-5 font-extrabold text-3xl text-blue sm:text-green  md:text-red-dk uppercase;
+    @apply flex justify-center mb-5 font-extrabold text-3xl text-red-dk uppercase;
   }
 
   label {
@@ -29,7 +29,7 @@
   }
 
   .btn {
-    @apply w-full bg-red-dk hover:bg-red-li uppercase text-black font-bold py-2 rounded; 
+    @apply w-full bg-red-dk hover:bg-gray-def uppercase text-black font-bold py-2 rounded; 
   }
 
   form {

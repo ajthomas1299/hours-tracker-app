@@ -5,9 +5,9 @@ import ThemeChanger from 'components/layout/ThemeChanger'
 const Index = () => {
   return(
     <div className="flex flex-col items-center h-screen w-full">
-      <div className="flex w-screen text-white font-semibold text-xl justify-center items-center h-12 bg-black">
+      <header className="flex w-screen text-white font-semibold text-xl justify-center items-center h-12 bg-black">
         <h1>Home Menu</h1>
-      </div>
+      </header>
       {/* <ThemeChanger /> */}
       <div className="flex flex-col items-center justify-evenly h-full w-screen">
     {
@@ -21,6 +21,7 @@ const Index = () => {
       ))
     }
     </div>
+      <footer className="flex w-screen text-white font-semibold text-xl justify-center items-center h-12 bg-black">Log out</footer>
     </div>
   )
 }
