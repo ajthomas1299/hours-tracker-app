@@ -2,7 +2,7 @@
 const Footer = () => {
 
   return (
-    <nav className="fixed bottom-0 left-0 w-full text-center border-t border-grey bg-white ">
+    <nav className="fixed bottom-0 left-0 w-full text-center border-t border-grey bg-gray-li ">
 			
       <div className="flex flex-row items-center">
 

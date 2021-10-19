@@ -27,6 +27,7 @@ module.exports = {
           li: 'var(--gray-light)',
           def: 'var(--gray-default)',
           dk: 'var(--gray-dark)',
+          dkm: 'var(--gray-darkMode)',
         },
         black: 'var(--black)',
         white: 'var(--white)',
