@@ -1,4 +1,4 @@
-function PlayButton(props) {
+function PlayButton(props:{onClick:()=>void}) {
     return (
         <button {...props} className={'with-symbol'}>
             <svg xmlns="http://www.w3.org/2000/svg" className="" viewBox="0 0 20 20" fill="currentColor">

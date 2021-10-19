@@ -1,14 +1,14 @@
+import { useState } from "react";
 import Layout from "components/layout/Layout";
 import Pomodoro from "components/webPages/pomodoro/Pomodoro";
 import Settings from "components/webPages/pomodoro/Settings";
-import {useState} from "react";
 import SettingsContext from 'components/webPages/pomodoro/SettingsContext';
 
 const pomodoro = () => {
   //
-  const [showSettings, setShowSettings] = useState(false);
-  const [workMinutes, setWorkMinutes] = useState(25);
-  const [breakMinutes, setBreakMinutes] = useState(5);
+  const [showSettings, setShowSettings] = useState<boolean>(false);
+  const [workMinutes, setWorkMinutes] = useState<number>(25);
+  const [breakMinutes, setBreakMinutes] = useState<number>(5);
   // const [exerciseMinutes, setExerciseMinutes] = useState( 1);
   // const [selectedAlarm, setSelectedAlarm] = useState("Alarm2");
 

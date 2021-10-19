@@ -1,4 +1,4 @@
-function BackButton(props) {
+function BackButton(props:{onClick:()=>void}) {
     return (
         <button {...props} className={'with-text'}>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-9 w-5" viewBox="0 0 20 20" fill="currentColor">

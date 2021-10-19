@@ -48,7 +48,7 @@ const Pomodoro = () => {
         // const alarmSound = new Audio("Alarm.mp3"); // does NOT work
         // const alarmSound = new Audio("./Alarm.mp3"); // does NOT work
         // const alarmSound = new Audio("https://assets.coderrocketfuel.com/pomodoro-times-up.mp3"); // works
-        const alarmSound = new Audio("https://spideywebdesigns.com/assets/sounds/Alarm.mp3"); // works
+         const alarmSound = new Audio("https://spideywebdesigns.com/assets/sounds/Alarm.mp3"); // works
         // const alarmSound = new Audio("https://spideywebdesigns.com/assets/sounds/Alarm2.wav"); // works
         // const alarmSound = new Audio("https://spideywebdesigns.com/assets/sounds/Alarm3.wav"); // works
         // const alarmSound = new Audio("https://spideywebdesigns.com/assets/sounds/Alarm4.wav"); // works
@@ -99,7 +99,7 @@ const Pomodoro = () => {
     //
     if (seconds < 10 ) {
         //
-        seconds = '0'+seconds;
+        seconds = 0 + seconds;
         ////
     }
     ////
@@ -113,7 +113,7 @@ const Pomodoro = () => {
                     textColor: '#464646',
                     textSize: '24px',
                     pathColor:mode === 'work' ? red : green,
-                    tailColor: '959595',
+                    trailColor: '959595',
                 })}
             />
 
