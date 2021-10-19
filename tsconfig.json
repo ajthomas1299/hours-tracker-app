@@ -15,6 +15,6 @@
     "isolatedModules": true,
     "jsx": "preserve",
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/_document.tsx", "src/components/webPages/pomodoro"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/_document.tsx", "src/components/webPages/pomodoro", "src/pages/pomodoro.js"],
   "exclude": ["node_modules"]
 }
