@@ -32,10 +32,11 @@ module.exports = {
         black: 'var(--black)',
         white: 'var(--white)',
         blue: 'blue',
-        green: 'green',
+        green: 'var(--green)',
       },
       width: {
         'tq': '75%',
+        '300': '300px'
       }
     },
   },

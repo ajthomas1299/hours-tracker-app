@@ -68,7 +68,7 @@ const Pomodoro = () => {
             // check if the timer has reached 0
             if (secondsLeftRef.current === 0) {
                 //
-                setIsPaused(true);
+                //setIsPaused(true);
                 // put beep/alarm in here
                 alarmSound.play();
                 //
@@ -99,7 +99,7 @@ const Pomodoro = () => {
 
     const zero = '0'
     if (seconds < 10 ) {
-      seconds = `${zero}${seconds}`;
+      seconds = `${zero}${seconds}`; // seconds = '0' + seconds
     }
 
     if(minutes < 10) {
@@ -107,7 +107,7 @@ const Pomodoro = () => {
     }
 
     return (
-        <div style={{marginLeft: 'auto', marginRight: 'auto', textAlign:'center', width: '250px', marginTop: '90px'}}>
+        <div className="m-auto w-64 mt-24 text-center mb-12">
             
             <CircularProgressbar 
                 value={percentage} 
@@ -119,15 +119,14 @@ const Pomodoro = () => {
                     trailColor: '959595',
                 })}
             />
-
-            <div style={{textAlign:'center', marginTop: '30px'}}>
+            <div className="text-center mt-8">
                     {isPaused ? 
                         <PlayButton onClick={() => {setIsPaused(false); isPausedRef.current = false; }} /> 
                         : <PauseButton onClick={() => {setIsPaused(true); isPausedRef.current = true; }} /> 
                     }
             </div>
 
-            <div style={{textAlign:'center', marginTop: '30px'}}>
+            <div className="text-center mt-8">
                 <SettingsButton 
                     onClick={() => settingsInfo.setShowSettings(true)} 
                 />

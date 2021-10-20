@@ -9,7 +9,7 @@ function Settings() {
 
     ////
     return (
-        <div style={{ margin: 'auto', width: '300px', textAlign: 'left', marginTop: '100px'}}>
+        <div className="m-auto w-300 text-left mt-24">
             
             <label>work minutes: {settingsInfo.workMinutes}:00</label>
             <ReactSlider 
@@ -33,7 +33,7 @@ function Settings() {
                 max={120}
             />
             
-            <div style={{textAlign:'center', marginTop: '40px'}}>
+            <div className="text-center mt-10">
                 <BackButton onClick={() => settingsInfo.setShowSettings(false)} />
             </div>
         </div>
