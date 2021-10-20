@@ -78,31 +78,34 @@ const Pomodoro = () => {
                 //
                 // return switchMode();
                 return;
-                ////
+
             }
-            //
+
             tick();
-            ////
+
         }, 1000);
-        //
+
         return () => clearInterval(interval);
-        ////
+
     }, [settingsInfo]);
-    //
+
     const totalSeconds = mode === 'work'
         ? settingsInfo.workMinutes * 60
         : settingsInfo.breakMinutes * 60;
-    //
+  
     const percentage = Math.round(secondsLeft / totalSeconds * 100);
-    const minutes = Math.floor(secondsLeft / 60);
-    let seconds = secondsLeft % 60;
-    //
+    let minutes: number | string = Math.floor(secondsLeft / 60);
+    let seconds: number | string = secondsLeft % 60;
+
+    const zero = '0'
     if (seconds < 10 ) {
-        //
-        seconds = 0 + seconds;
-        ////
+      seconds = `${zero}${seconds}`;
     }
-    ////
+
+    if(minutes < 10) {
+      minutes = `${zero}${minutes}`
+    }
+
     return (
         <div style={{marginLeft: 'auto', marginRight: 'auto', textAlign:'center', width: '250px', marginTop: '90px'}}>
             
