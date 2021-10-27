@@ -2,6 +2,7 @@ import { Links, Buttons } from 'data/buttons/Buttons'
 import SelectSession from './SelectSession'
 import Search from './Search'
 import SessionOverview from './SessionOverview'
+import Header from 'components/layout/Header'
 
 const ViewSessions = () => {
   const { homeLink, reportsLink, loginLink } = Links
@@ -10,13 +11,15 @@ const ViewSessions = () => {
   return (
     <div className="h-screen flex flex-col">
       <div className="flex-1">
-      <header className="w-screen text-white font-semibold text-xl items-center h-12 bg-black">
+        <Header>
+      {/* <header className="w-screen text-white font-semibold text-xl items-center h-12 bg-black">
         <nav className="h-full flex justify-between content-center mx-4 lg:mx-8">
-           { backBtn }
-          <h1 className="self-center">Sessions</h1>
-           { homeLink }
+           { backBtn } */}
+          Sessions
+        {/*   { homeLink }
         </nav>
-      </header>
+      </header> */}
+      </Header>
       <main className="">
         <SelectSession />
         <Search />
