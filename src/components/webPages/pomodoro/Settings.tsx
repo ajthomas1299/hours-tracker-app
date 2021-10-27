@@ -1,7 +1,7 @@
 import ReactSlider from "react-slider";
 import SettingsContext from "./SettingsContext";
 import {useContext} from "react";
-import BackButton from "./BackButton";
+import BackButton from "./pomodoroBtns/BackButton";
 
 function Settings() {
     //

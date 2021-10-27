@@ -1,8 +1,8 @@
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import PauseButton from './PauseButton';
-import PlayButton from './PlayButton';
-import SettingsButton from './SettingsButton';
+import PauseButton from './pomodoroBtns/PauseButton';
+import PlayButton from './pomodoroBtns/PlayButton';
+import SettingsButton from './pomodoroBtns/SettingsButton';
 import {useContext, useState, useEffect, useRef} from "react";
 import SettingsContext from './SettingsContext';
 
