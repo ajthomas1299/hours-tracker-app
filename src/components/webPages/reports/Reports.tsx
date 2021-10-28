@@ -1,9 +1,9 @@
-
+import Header from 'components/layout/Header' 
 
 const Reports = () => {
   return (
     <div>
-      <h1>Reports Component</h1>
+      <Header>Reports</Header>
     </div>
   )
 }

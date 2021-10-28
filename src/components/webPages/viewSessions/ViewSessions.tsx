@@ -12,13 +12,7 @@ const ViewSessions = () => {
     <div className="h-screen flex flex-col">
       <div className="flex-1">
         <Header>
-      {/* <header className="w-screen text-white font-semibold text-xl items-center h-12 bg-black">
-        <nav className="h-full flex justify-between content-center mx-4 lg:mx-8">
-           { backBtn } */}
           Sessions
-        {/*   { homeLink }
-        </nav>
-      </header> */}
       </Header>
       <main className="">
         <SelectSession />

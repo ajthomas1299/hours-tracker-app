@@ -1,9 +1,9 @@
-
+import Header from 'components/layout/Header' 
 
 const AddClient = () => {
   return (
     <div>
-      <h1>Add Client Component</h1>
+      <Header>Add Client</Header>
     </div>
   )
 }

@@ -1,9 +1,9 @@
-
+import Header from 'components/layout/Header' 
 
 const AddProject = () => {
   return (
     <div>
-      <h1>Add Project Component</h1>
+      <Header>Add Project</Header>
     </div>
   )
 }

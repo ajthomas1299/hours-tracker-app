@@ -20,7 +20,7 @@ const pomodoro = () => {
       description="Timer that helps you to stay productive."
       ogImage=""
       url=""
-      showHeader={ true }
+      showHeader={ false }
       showFooter={ true } 
     >
       

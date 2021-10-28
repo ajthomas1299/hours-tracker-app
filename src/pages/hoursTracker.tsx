@@ -8,7 +8,7 @@ const hoursTracker = () => {
       description="Tracking how many hours the activity takes."
       ogImage=""
       url=""
-      showHeader={ true }
+      showHeader={ false }
       showFooter={ true } 
     >
       <HoursTracker />

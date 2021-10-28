@@ -1,9 +1,9 @@
-
+import Header from 'components/layout/Header' 
 
 const AddTask = () => {
   return (
     <div>
-      <h1>Add Task Component</h1>
+      <Header>Add Task</Header>
     </div>
   )
 }

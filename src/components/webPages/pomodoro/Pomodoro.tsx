@@ -5,6 +5,7 @@ import PlayButton from './pomodoroBtns/PlayButton';
 import SettingsButton from './pomodoroBtns/SettingsButton';
 import {useContext, useState, useEffect, useRef} from "react";
 import SettingsContext from './SettingsContext';
+import Header from 'components/layout/Header' 
 
 const red = '#75002d';
 const green = '#0d8d40';
@@ -107,8 +108,9 @@ const Pomodoro = () => {
     }
 
     return (
-        <div className="m-auto w-64 mt-24 text-center mb-12">
-            
+      <>
+        <Header>Pomodoro timer</Header>
+          <div className="m-auto w-64 mt-24 text-center mb-12">
             <CircularProgressbar 
                 value={percentage} 
                 text={minutes + ':' + seconds} 
@@ -131,8 +133,8 @@ const Pomodoro = () => {
                     onClick={() => settingsInfo.setShowSettings(true)} 
                 />
             </div>
-
         </div>
+      </>
     )
 }
 
