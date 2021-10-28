@@ -1,37 +1,37 @@
 
 const SessionOverview = () => {
   return (
-    <section className="h-full mx-1">
-      <table className="table-auto">
-  <thead className="text-left">
-    <tr>
-      <th className="p-2">Date</th>
-      <th className="p-2">Hrs</th>
-      <th className="p-2">Project</th>
-      <th className="p-2">Task</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td className="border px-4 py-2">10/10/21</td>
-      <td className="border px-4 py-2">4</td>
-      <td className="border px-4 py-2">Support</td>
-      <td className="border px-4 py-2">Added new Users</td>
-    </tr>
-    <tr className="bg-gray-100">
-      <td className="border px-4 py-2">10/13/21</td>
-      <td className="border px-4 py-2">5</td>
-      <td className="border px-4 py-2">Technical</td>
-      <td className="border px-4 py-2">fixed connection to database</td>
-    </tr>
-    <tr>
-      <td className="border px-4 py-2">10/15/21</td>
-      <td className="border px-4 py-2">7</td>
-      <td className="border px-4 py-2">Frontend</td>
-      <td className="border px-4 py-2">styled page</td>
-    </tr>
-  </tbody>
-</table>
+    <section className="w-full mt-4">
+      <table className="w-11/12 mx-auto">
+        <thead className="">
+          <tr>
+            <th className="text-left w-2/12 p-2">Date</th>
+            <th className="w-1/12 p-1">Hrs</th>
+            <th className="text-left w-2/12 p-2">Project</th>
+            <th className="text-left w-9/12 p-2">Task</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="w-2/12 border px-1 py-2">10/10/21</td>
+            <td className="w-1/12 border text-center py-2 ">4</td>
+            <td className="w-2/12 border px-1 py-2">Support</td>
+            <td className="w-9/12 border px-1 py-2">Added new Users</td>
+          </tr>
+          <tr className="bg-gray-100">
+            <td className="w-2/12 border px-1 py-2">10/13/21</td>
+            <td className="w-1/12 border text-center py-2">5</td>
+            <td className="w-2/12 border px-1 py-2">Technical</td>
+            <td className="w-9/12 border px-1 py-2">fixed connection to database</td>
+          </tr>
+          <tr>
+            <td className="w-2/12 border px-1 py-2">10/15/21</td>
+            <td className="w-1/12 border text-center py-2">7</td>
+            <td className="w-2/12 border px-1 py-2">Frontend</td>
+            <td className="w-9/12 border px-1 py-2">styled page</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   )
 }
