@@ -2,6 +2,7 @@ import { MainBtns } from 'data/mainMenu'
 import NextLink from 'components/links/NextLink'
 import ThemeChanger from 'components/layout/ThemeChanger'
 import Header from 'components/layout/Header' 
+import Footer from 'components/layout/Footer' 
 
 const Index = () => {
   return(
@@ -19,7 +20,8 @@ const Index = () => {
       ))
     }
     </div>
-      <footer className="flex w-screen text-white font-semibold text-xl justify-center items-center h-12 bg-black">Log out</footer>
+    <Footer />
+      {/* <footer className="flex w-screen text-white font-semibold text-xl justify-center items-center h-12 bg-black">Log out</footer> */}
     </div>
   )
 }

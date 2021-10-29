@@ -21,7 +21,7 @@ const pomodoro = () => {
       ogImage=""
       url=""
       showHeader={ false }
-      showFooter={ true } 
+      showFooter={ false } 
     >
       
       <SettingsContext.Provider value={{

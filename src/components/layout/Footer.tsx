@@ -1,26 +1,19 @@
+import { IPropLinks } from 'models/propLinks'
+import { useRouter } from 'next/router'
+import { Links } from 'data/buttons/Buttons'
 
-const Footer = () => {
+const Footer = ({ children }: IPropLinks) => {
+  const router = useRouter()
+
+  const { loginLink } = Links
 
   return (
-    <nav className="fixed bottom-0 left-0 w-full text-center border-t border-grey bg-gray-li ">
-			
-      <div className="flex flex-row items-center">
-
-        <div className="flex flex-1 justify-start ">
-          <a href="#" className="py-2 px-2 font-medium text-white bg-red-dk hover:bg-gray-default transition duration-300">Save</a>
-        </div>
-
-        <div className="w-96 flex flex-1 items-center ">
-            <div className="m-auto font-semibold text-gray-500 text-xl sm:text-l"></div>
-        </div>
-          
-        <div className="flex flex-1 justify-end ">
-          <a href="#" className="float-right py-2 px-2 font-medium text-white bg-red-dk hover:bg-gray-default transition duration-300">Logout</a>
-        </div>
-        
-      </div>
-			
-		</nav>
+    <footer className="flex w-screen text-white font-semibold text-xl items-center h-12 bg-black">
+      <nav className="w-full flex justify-between mx-4 lg:mx-8">
+        <div className="flex flex-1 self-center justify-start">{ router.pathname === '/' ? false : children }</div>
+        <div className="flex flex-1 self-center justify-end">{ loginLink }</div>
+      </nav>
+    </footer>
   )
 }
 
