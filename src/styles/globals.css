@@ -38,6 +38,10 @@
     @apply w-full bg-red-dk hover:bg-gray-def uppercase text-black font-bold py-2 rounded; 
   }
 
+  a {
+    @apply self-center border-white border px-3 rounded
+  }
+
   form {
     @apply bg-white shadow-md rounded p-5 m-2;
   }

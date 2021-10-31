@@ -10,27 +10,27 @@ import Link from 'next/link'
 
  export const Links: ILinks = {
    homeLink: <Link href={ home }>
-               <a className="self-center border-white border px-3 rounded">Home</a>
+               <a className="">Home</a>
              </Link>,
    reportsLink: <Link href={ reports }>
-                  <a className="self-center border-white border px-3 rounded">Report</a>
+                  <a className="">Report</a>
                 </Link>,
    loginLink: <Link href={ login }>
-                <a className="self-center border-white border px-3 rounded">Log out</a>
+                <a className="">Log out</a>
               </Link>, 
    pomodoroLink: <Link href={ pomodoro }>
-                <a className="self-center border-white border px-3 rounded">Pomodoro</a>
+                <a className="">Pomodoro</a>
               </Link>,
    hoursTrackerLink: <Link href={ hoursTracker }>
-                <a className="self-center border-white border px-3 rounded">Hours Tracker</a>
+                <a className="">Hours Tracker</a>
               </Link>,
    viewSessionsLink: <Link href={ viewSessions }>
-                <a className="self-center border-white border px-3 rounded">Sessions</a>
+                <a className="">Sessions</a>
               </Link>,
  }
 
  export const Buttons: IButtons = {
-   backBtn: <button className="border-white border rounded uppercase px-3 self-center" 
+   backBtn: <button className="uppercase text-sm py-1 px-2   border-white border rounded" 
               onClick={ () => history.back() }>Back</button>
  }
   
