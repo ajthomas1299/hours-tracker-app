@@ -1,8 +1,10 @@
-import SelectClient from "./SelectClient"
-import SelectProject from "./SelectProject"
-import SelectTask from "./SelectTask"
+import SelectClient from './SelectClient'
+import SelectProject from './SelectProject'
+import SelectTask from './SelectTask'
 import Header from 'components/layout/Header'
 import Footer from 'components/layout/Footer'
+import EnterDescription from './EnterDescription'
+import ToggleTime from './ToggleTime'
 import { Links } from 'data/buttons/Buttons'
 
 const HoursTracker = () => {
@@ -15,6 +17,9 @@ const HoursTracker = () => {
         <SelectClient />
         <SelectProject />
         <SelectTask />
+        <EnterDescription />
+        <ToggleTime />
+        
       </section>
       <Footer>{ pomodoroLink }</Footer>
     </div>

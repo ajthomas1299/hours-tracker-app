@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        'sm': '320px',
+        'smd': '375px',
         'sml': { 
           'min': '1px', 
           'orientation': 'landscape' 

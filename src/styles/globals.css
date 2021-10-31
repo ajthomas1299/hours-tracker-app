@@ -30,12 +30,17 @@
 @tailwind components;
 
 @layer components {
+
   input {
-    @apply shadow appearance-none border border-gray-900 rounded w-full py-2 px-3 mb-3 text-gray-700 leading-tight focus:outline-none;
+      @apply shadow appearance-none border border-gray-900 rounded w-full py-2 px-3 mb-3 text-gray-700 leading-tight focus:outline-none;
   }
 
   .btn {
     @apply w-full bg-red-dk hover:bg-gray-def uppercase text-black font-bold py-2 rounded; 
+  }
+
+  .btn2 {
+    @apply w-36 mx-2 px-2 bg-red-dk hover:bg-gray-def uppercase text-gray-li font-bold rounded; 
   }
 
   form {
@@ -43,7 +48,11 @@
   }
 
   select{
-    @apply border-2 border-gray-dk w-tq text-2xl rounded;
+    @apply bg-white border-2 border-gray-li w-tq text-2xl text-gray-dk rounded;
+  }
+
+  textarea{
+    @apply border-2 border-gray-li w-tq p-1 text-2xl text-gray-dk rounded;
   }
 }
 
@@ -56,11 +65,11 @@
 } 
 
 body {
-  /* @apply bg-gray-def ; */
+  margin: 0 auto;
 }
 
 button {
-  @apply bg-transparent text-white inline-block w-24 cursor-pointer;
+  @apply bg-transparent text-white inline-block w-20 cursor-pointer;
 }
 
 button.with-text {

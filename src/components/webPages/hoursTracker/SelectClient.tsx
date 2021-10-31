@@ -1,8 +1,9 @@
 const SelectClient = () => {
   return (
-    <div className="w-screen flex flex-col items-center">
-      <label className="text-xl mt-3" htmlFor="client">Choose a client:</label>
-      <select className="" name="clients" id="clients">
+    <div className="w-screen flex flex-col items-center mb-6">
+      
+      <select name="clients" id="clients" >
+        <option value="" disabled selected hidden>Select Client...</option>
         <option value="acme">acme</option>
         <option value="GE">GE</option>
         <option value="Microsoft">Microsoft</option>

@@ -1,14 +1,17 @@
 
+// 
+
 
 const SelectTask = () => {
   return (
-    <div className="w-screen flex flex-col items-center">
-       <label className="text-xl mt-3" htmlFor="task">Choose a Task:</label>
+    <div className="w-screen flex flex-col items-center mb-6">
+       
       <select className="" name="tasks" id="tasks">
-        <option value="acme">refactor</option>
-        <option value="GE">code</option>
-        <option value="Microsoft">Microsoft</option>
-        <option value="Apple">Apple</option>
+      <option value="" disabled selected hidden>Select Task...</option>
+        <option value="refactor">refactor code</option>
+        <option value="code">code update</option>
+        <option value="Microsoft">report project</option>
+        <option value="Apple">support call</option>
       </select>
     </div>
   )
