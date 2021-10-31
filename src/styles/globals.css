@@ -41,6 +41,7 @@
 
   a {
     @apply self-center border-white border px-3 rounded
+  }
   .btn2 {
     @apply w-36 mx-2 px-2 bg-red-dk hover:bg-gray-def uppercase text-gray-li font-bold rounded; 
   }
