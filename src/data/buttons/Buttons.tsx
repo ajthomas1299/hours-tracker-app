@@ -2,7 +2,7 @@ import { SingleLinks } from 'data/singleLinks'
 import { ILinks, IButtons} from 'models/buttons/buttons'
 import Link from 'next/link' 
 
- const { home, reports, login } = SingleLinks
+ const { home, reports, login, pomodoro } = SingleLinks
 
  export const Links: ILinks = {
    homeLink: <Link href={ home }>
@@ -13,7 +13,10 @@ import Link from 'next/link'
                 </Link>,
    loginLink: <Link href={ login }>
                 <a className="self-center border-white border px-3 rounded">Log out</a>
-              </Link> 
+              </Link>, 
+   pomodoroLink: <Link href={ pomodoro }>
+                <a className="self-center border-white border px-3 rounded">Pomodoro</a>
+              </Link>
  }
 
  export const Buttons: IButtons = {

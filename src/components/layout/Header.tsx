@@ -1,8 +1,8 @@
 import { Links, Buttons } from 'data/buttons/Buttons'
 import { useRouter } from 'next/router'
-import { IPropLinks } from 'models/propLinks'
+import { IChildName } from 'models/propLinks'
 
-const Header = ({ children }: IPropLinks) => {
+const Header = ({ children }: IChildName) => {
   const { homeLink } = Links
   const { backBtn } = Buttons
 

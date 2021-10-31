@@ -9,7 +9,7 @@ const hoursTracker = () => {
       ogImage=""
       url=""
       showHeader={ false }
-      showFooter={ true } 
+      showFooter={ false } 
     >
       <HoursTracker />
     </Layout>
