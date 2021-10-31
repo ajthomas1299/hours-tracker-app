@@ -1,13 +1,9 @@
 
 const Search = () => {
   return (
-    <section className="w-screen h-20 flex">
-      <div className="w-full flex justify-evenly items-center">
-          <input className="h-10 mb-0 ml-2" type="search" name="search" id="search" placeholder="Search Session" />
-      </div>
-      <div className="flex items-center mx-4">
-        <button className="h-10 px-2 bg-black text-white rounded">GO</button>
-      </div>
+    <section className="flex flex-grow justify-center mx-10">
+      <input className="w-3/5 h-10 mb-0" type="search" name="search" id="search" placeholder="Search Sessions" />
+      <button className="ml-2 h-10 bg-black text-white rounded">GO</button>
     </section>
   )
 }
