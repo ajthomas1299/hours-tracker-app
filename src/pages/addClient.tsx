@@ -8,8 +8,6 @@ const addClient = () => {
       description="Add and view clients you have."
       ogImage=""
       url=""
-      showHeader={ false }
-      showFooter={ false } 
     >
       <AddClient />
     </Layout>

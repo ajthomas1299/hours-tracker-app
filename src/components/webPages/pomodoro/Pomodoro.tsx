@@ -1,36 +1,34 @@
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
-import PauseButton from './pomodoroBtns/PauseButton';
-import PlayButton from './pomodoroBtns/PlayButton';
-import SettingsButton from './pomodoroBtns/SettingsButton';
-import {useContext, useState, useEffect, useRef} from "react";
-import SettingsContext from './SettingsContext';
-import Header from 'components/layout/Header' 
+import { useContext, useState, useEffect, useRef } from 'react'
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar'
+import 'react-circular-progressbar/dist/styles.css'
+import PauseButton from './pomodoroBtns/PauseButton'
+import PlayButton from './pomodoroBtns/PlayButton'
+import SettingsButton from './pomodoroBtns/SettingsButton'
+import SettingsContext from './SettingsContext'
+import Header from 'components/layout/Header'
+import Footer from 'components/layout/Footer'
+import { Links } from 'data/buttons/Buttons'
 
-const red = '#75002d';
-const green = '#0d8d40';
+const red = '#75002d'
+const green = '#0d8d40'
 
 const Pomodoro = () => {
-    //
-    const settingsInfo = useContext(SettingsContext);
-    //
-    const [isPaused, setIsPaused] = useState(true);
-    const [mode, setMode] = useState('work'); // work/break/null
-    const [secondsLeft, setSecondsLeft] = useState(0);
+  const { reportsLink } = Links
+
+    const settingsInfo = useContext(SettingsContext)
+    const [isPaused, setIsPaused] = useState(true)
+    const [mode, setMode] = useState('work') // work/break/null
+    const [secondsLeft, setSecondsLeft] = useState(0)
     // for functions used by the interval
-    const secondsLeftRef = useRef(secondsLeft);
-    const isPausedRef = useRef(isPaused);
-    const modeRef = useRef(mode);
-    //
+    const secondsLeftRef = useRef(secondsLeft)
+    const isPausedRef = useRef(isPaused)
+    const modeRef = useRef(mode)
+
     const tick = () => {
-        //
         secondsLeftRef.current = secondsLeftRef.current - 1;
         setSecondsLeft(secondsLeftRef.current);
-        //
     }
-    //
-  
-    //
+   
     useEffect( () => {
         //
         const switchMode = () => {
@@ -86,21 +84,21 @@ const Pomodoro = () => {
 
         }, 1000);
 
-        return () => clearInterval(interval);
+        return () => clearInterval(interval)
 
-    }, [settingsInfo]);
+    }, [settingsInfo])
 
     const totalSeconds = mode === 'work'
         ? settingsInfo.workMinutes * 60
-        : settingsInfo.breakMinutes * 60;
+        : settingsInfo.breakMinutes * 60
   
-    const percentage = Math.round(secondsLeft / totalSeconds * 100);
-    let minutes: number | string = Math.floor(secondsLeft / 60);
-    let seconds: number | string = secondsLeft % 60;
+    const percentage = Math.round(secondsLeft / totalSeconds * 100)
+    let minutes: number | string = Math.floor(secondsLeft / 60)
+    let seconds: number | string = secondsLeft % 60
 
     const zero = '0'
     if (seconds < 10 ) {
-      seconds = `${zero}${seconds}`; // seconds = '0' + seconds
+      seconds = `${zero}${seconds}`
     }
 
     if(minutes < 10) {
@@ -108,9 +106,9 @@ const Pomodoro = () => {
     }
 
     return (
-      <>
+      <div className="h-screen flex flex-col">
         <Header>Pomodoro timer</Header>
-          <div className="m-auto w-64 mt-24 text-center mb-12">
+          <div className="flex-1 m-auto w-64 mt-24 text-center mb-12">
             <CircularProgressbar 
                 value={percentage} 
                 text={minutes + ':' + seconds} 
@@ -134,7 +132,8 @@ const Pomodoro = () => {
                 />
             </div>
         </div>
-      </>
+        <Footer>{ reportsLink }</Footer>
+      </div>
     )
 }
 

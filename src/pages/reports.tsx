@@ -8,8 +8,6 @@ const reports = () => {
       description="Reports of the hours that are tracked."
       ogImage=""
       url=""
-      showHeader={ false }
-      showFooter={ false } 
     >
       <Reports />
     </Layout>

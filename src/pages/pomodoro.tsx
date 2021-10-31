@@ -20,8 +20,6 @@ const pomodoro = () => {
       description="Timer that helps you to stay productive."
       ogImage=""
       url=""
-      showHeader={ false }
-      showFooter={ false } 
     >
       
       <SettingsContext.Provider value={{

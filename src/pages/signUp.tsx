@@ -7,10 +7,7 @@ const SignUp = () => {
       title="SignUp | TrackerApp"
       description=""
       ogImage=""
-      url=""
-      showHeader={ false }
-      showFooter={ false }
-      
+      url=""      
     >
       <SignUpPage />
     </Layout>

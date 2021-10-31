@@ -8,8 +8,6 @@ const addProject = () => {
       description="Add and view projects you have."
       ogImage=""
       url=""
-      showHeader={ false }
-      showFooter={ false } 
     >
       <AddProject />
     </Layout>

@@ -1,15 +1,11 @@
 import Head from 'next/head'
-import dynamic from 'next/dynamic'
 import { ILayoutProps } from 'models/propLayout'
 import { 
   Favicons, 
   Urls 
 } from 'data/favicons'
 
-const Header = dynamic(() => import('./Header'), { ssr: false })
-const Footer = dynamic(() => import('./Footer'), { ssr: false })
-
-const Layout = ({ children, title, description, showHeader, showFooter, ogImage, url }: ILayoutProps) => {
+const Layout = ({ children, title, description, ogImage, url }: ILayoutProps) => {
   const { apple, browserConfig, faviconSmall, faviconBig, faviconIco, safari, webmanifest } = Favicons
   const { ogImg, pageUrl } = Urls
 
@@ -17,7 +13,7 @@ const Layout = ({ children, title, description, showHeader, showFooter, ogImage,
     <> 
       <Head>
         <title>
-          { title ? title : 'Portfolio' }
+          { title ? title : 'Hours Tracker' }
         </title>
         <meta 
           name='description' 
@@ -25,7 +21,7 @@ const Layout = ({ children, title, description, showHeader, showFooter, ogImage,
           content={
             description 
               ? description 
-              : 'Information about Sven'
+              : 'Tracking productive hours'
           } 
         />
         <meta
@@ -33,7 +29,7 @@ const Layout = ({ children, title, description, showHeader, showFooter, ogImage,
           content={
             title
               ? title
-              : 'Goed Eten'
+              : 'Hours Tracker'
           }
           key='og:title'
         />
@@ -48,7 +44,7 @@ const Layout = ({ children, title, description, showHeader, showFooter, ogImage,
           content={
             description
               ? description
-              : 'Portfolio van Sven!'
+              : 'Overview productive hours'
           }
           key='og:description'
         />
@@ -81,15 +77,11 @@ const Layout = ({ children, title, description, showHeader, showFooter, ogImage,
       <meta name='theme-color' content='#000000' />
       <meta
         name='description'
-        content={'Portfolio Sven'}
+        content={'Hours Tracker'}
       />
       </Head>
-      <div className="h-screen flex flex-col">
-        <div className="flex-1">
-          { showHeader ? <Header /> : null }
+      <div className="">
           { children }
-        </div>
-          { showFooter ? <Footer /> : null }  
       </div>
     </>
   )

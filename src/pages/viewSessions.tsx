@@ -8,8 +8,6 @@ const viewSessions = () => {
       description="Overview of the sessions."
       ogImage=""
       url=""
-      showHeader={ false }
-      showFooter={ false } 
     >
       <ViewSessions />
     </Layout>

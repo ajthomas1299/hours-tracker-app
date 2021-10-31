@@ -3,6 +3,8 @@ export interface ILinks {
     reportsLink: JSX.Element
     loginLink: JSX.Element
     pomodoroLink: JSX.Element
+    hoursTrackerLink: JSX.Element
+    viewSessionsLink: JSX.Element
 }
 
 export interface IButtons {

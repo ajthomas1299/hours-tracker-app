@@ -8,8 +8,6 @@ const Home = () => {
       description="Information about the Tracker App."
       ogImage=""
       url=""
-      showHeader={ false }
-      showFooter={ false } 
     >
       <Homepage />
     </Layout>

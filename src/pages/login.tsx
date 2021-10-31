@@ -14,9 +14,6 @@ const Login = () => {
       description=""
       ogImage=""
       url=""
-      showHeader={ false }
-      showFooter={ false }
-      
     >
       
       <LoginPage />

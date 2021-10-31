@@ -3,7 +3,7 @@ import Footer from 'components/layout/Footer'
 import { Links } from 'data/buttons/Buttons'
 
 const Reports = () => {
-  const { reportsLink } = Links
+  const { viewSessionsLink } = Links
 
   return (
     <div className="h-screen flex flex-col">
@@ -11,7 +11,7 @@ const Reports = () => {
         <main className="flex-1">
 
         </main>
-      <Footer>{ reportsLink }</Footer>
+      <Footer>{ viewSessionsLink }</Footer>
     </div>
   )
 }

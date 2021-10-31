@@ -8,8 +8,6 @@ const addTask = () => {
       description="Add and view tasks you have."
       ogImage=""
       url=""
-      showHeader={ false }
-      showFooter={ false } 
     >
       <AddTask />
     </Layout>

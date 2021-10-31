@@ -1,8 +1,12 @@
 import { SingleLinks } from 'data/singleLinks'
-import { ILinks, IButtons} from 'models/buttons/buttons'
+import { 
+  ILinks, 
+  IButtons 
+ } from 'models/buttons/buttons'
 import Link from 'next/link' 
 
- const { home, reports, login, pomodoro } = SingleLinks
+ const { home, reports, login, pomodoro, 
+         hoursTracker, viewSessions } = SingleLinks
 
  export const Links: ILinks = {
    homeLink: <Link href={ home }>
@@ -16,7 +20,13 @@ import Link from 'next/link'
               </Link>, 
    pomodoroLink: <Link href={ pomodoro }>
                 <a className="self-center border-white border px-3 rounded">Pomodoro</a>
-              </Link>
+              </Link>,
+   hoursTrackerLink: <Link href={ hoursTracker }>
+                <a className="self-center border-white border px-3 rounded">Hours Tracker</a>
+              </Link>,
+   viewSessionsLink: <Link href={ viewSessions }>
+                <a className="self-center border-white border px-3 rounded">Sessions</a>
+              </Link>,
  }
 
  export const Buttons: IButtons = {
