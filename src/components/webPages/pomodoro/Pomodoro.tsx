@@ -109,7 +109,7 @@ const Pomodoro = () => {
     return (
       <div className="h-screen flex flex-col">
         <Header>Pomodoro timer</Header>
-          <div className="flex-1 m-auto w-64 mt-24 text-center mb-12">
+          <div className="flex-1 mx-auto grid place-items-center w-64 text-center">
             <CircularProgressbar 
                 value={percentage} 
                 text={minutes + ':' + seconds} 

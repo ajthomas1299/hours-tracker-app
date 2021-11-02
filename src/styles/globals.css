@@ -15,6 +15,11 @@
   --tw-text-opacity: 0.8;
 }
 
+body {
+  margin: 0 auto;
+  height: calc(100vh - 4rem);
+}
+
 @tailwind base;
 
 @layer base {
@@ -40,7 +45,7 @@
   }
 
   a {
-    @apply self-center border-white border px-3 rounded
+    @apply self-center border-white border  px-3 rounded text-sm;
   }
   .btn2 {
     @apply w-36 mx-2 px-2 bg-red-dk hover:bg-gray-def uppercase text-gray-li font-bold rounded; 
@@ -65,14 +70,10 @@
   input {
   focus:shadow-outline;
   }
-} 
-
-body {
-  margin: 0 auto;
 }
 
 button {
-  @apply bg-transparent text-white inline-block w-20 cursor-pointer;
+  @apply bg-transparent text-white inline-block  cursor-pointer;
 }
 
 button.with-text {

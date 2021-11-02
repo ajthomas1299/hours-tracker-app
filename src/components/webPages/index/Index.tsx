@@ -27,7 +27,6 @@ const Index = () => {
     }
     </div>
     <Footer />
-      {/* <footer className="flex w-screen text-white font-semibold text-xl justify-center items-center h-12 bg-black">Log out</footer> */}
     </div>
   )
 }

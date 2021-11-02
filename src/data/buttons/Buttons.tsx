@@ -30,7 +30,7 @@ import Link from 'next/link'
  }
 
  export const Buttons: IButtons = {
-   backBtn: <button className="uppercase text-sm py-1 px-2   border-white border rounded" 
+   backBtn: <button className="uppercase text-sm px-3 border-white border rounded flex self-center" 
               onClick={ () => history.back() }>Back</button>
  }
   
