@@ -13,13 +13,12 @@ const HoursTracker = () => {
   return (
     <div className="h-screen flex flex-col" >
       <Header>Hours Tracker</Header>
-      <section className="trackerContainer flex flex-1 flex-col items-center mt-24 w-full">
+      <section className="trackerContainer flex flex-1 flex-col items-center justify-center w-full">
         <SelectClient />
         <SelectProject />
         <SelectTask />
         <EnterDescription />
-        <ToggleTime />
-        
+        <ToggleTime />    
       </section>
       <Footer>{ pomodoroLink }</Footer>
     </div>

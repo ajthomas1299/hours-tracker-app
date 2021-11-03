@@ -2,7 +2,7 @@
 
 const SelectProject = () => {
   return (
-    <div className="w-screen flex flex-col items-center mb-6">
+    <div className="w-screen flex flex-col items-center mb-6 sml:mb-3 sml:mt-2">
       
       <select className="" name="projects" id="projects">
         <option value="" disabled selected hidden>Select Project...</option>

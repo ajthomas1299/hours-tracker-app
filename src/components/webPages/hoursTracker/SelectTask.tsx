@@ -4,7 +4,7 @@
 
 const SelectTask = () => {
   return (
-    <div className="w-screen flex flex-col items-center mb-6">
+    <div className="w-screen flex flex-col items-center mb-6 sml:mb-3 sml:mt-2">
        
       <select className="" name="tasks" id="tasks">
       <option value="" disabled selected hidden>Select Task...</option>

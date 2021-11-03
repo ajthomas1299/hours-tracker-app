@@ -56,11 +56,11 @@ body {
   }
 
   select{
-    @apply bg-white border-2 border-gray-li w-tq text-2xl text-gray-dk rounded;
+    @apply bg-white border-2 border-gray-li w-tq py-2 px-1 sml:p-0 mb-6 sml:mb-0  text-gray-dk rounded;
   }
 
   textarea{
-    @apply border-2 border-gray-li w-tq p-1 text-2xl text-gray-dk rounded;
+    @apply border-2 border-gray-li w-tq p-1  text-gray-dk rounded;
   }
 }
 
