@@ -45,10 +45,10 @@ body {
   }
 
   a {
-    @apply self-center border-white border  px-3 rounded text-sm;
+    @apply self-center border-white border md:p-1 md:px-5  px-3 rounded md:text-2xl text-sm;
   }
   .btn2 {
-    @apply w-36 mx-2 px-2 bg-red-dk hover:bg-gray-def uppercase text-gray-li font-bold rounded; 
+    @apply w-36 md:w-40 mx-2 px-2  bg-red-dk hover:bg-gray-def uppercase text-gray-li font-bold rounded; 
   }
 
   form {
@@ -56,14 +56,11 @@ body {
   }
 
   select{
-    @apply bg-white border-2 border-gray-li w-tq py-2 px-1 sml:p-0 mb-6 sml:mb-0  text-gray-dk rounded;
+    @apply bg-white border-2 border-gray-li w-tq py-2 px-1 sml:p-0 mb-6 sml:mb-0 md:h-16 md:text-2xl text-gray-dk rounded xl:w-2/4;
   }
 
   textarea{
-    width: 100%;
-    height: 80%;
-
-    @apply border-2 border-gray-li w-tq p-1  text-gray-dk rounded;
+    @apply border-2 border-gray-li w-tq p-1 md:text-2xl text-gray-dk rounded sml:h-10 md:h-full mdl:h-40 xl:w-2/4 ;
   }
 }
 
