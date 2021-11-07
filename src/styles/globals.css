@@ -17,7 +17,6 @@
 
 body {
   margin: 0 auto;
-  height: calc(100vh - 4rem);
 }
 
 @tailwind base;
@@ -45,7 +44,7 @@ body {
   }
 
   a {
-    @apply self-center border-white border md:p-1 md:px-5  px-3 rounded md:text-2xl text-sm;
+    @apply self-center border-white border md:p-1 md:px-5  px-3 rounded md:text-2xl mdl:text-2xl text-sm;
   }
   .btn2 {
     @apply w-36 md:w-40 mx-2 px-2  bg-red-dk hover:bg-gray-def uppercase text-gray-li font-bold rounded; 
@@ -56,11 +55,11 @@ body {
   }
 
   select{
-    @apply bg-white border-2 border-gray-li w-tq py-2 px-1 sml:p-0 mb-6 sml:mb-0 md:h-16 md:text-2xl text-gray-dk rounded xl:w-2/4;
+    @apply bg-white border-2 border-gray-li w-tq py-2 px-1 sml:p-0 mb-6 sml:mb-0 md:h-16 md:text-2xl mdl:text-2xl text-gray-dk rounded xl:w-2/4;
   }
 
   textarea{
-    @apply border-2 border-gray-li w-tq p-1 md:text-2xl text-gray-dk rounded sml:h-10 md:h-full mdl:h-40 xl:w-2/4 ;
+    @apply border-2 border-gray-li w-tq p-1 md:text-2xl mdl:text-2xl text-gray-dk rounded sml:h-10 md:h-full mdl:h-40 xl:w-2/4 ;
   }
 }
 

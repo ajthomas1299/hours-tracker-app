@@ -1,4 +1,3 @@
-import Link from 'next/link' 
 import { SingleLinks } from 'data/singleLinks'
 import { MainBtns } from 'data/mainMenu'
 import NextLink from 'components/links/NextLink'

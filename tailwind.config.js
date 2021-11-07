@@ -10,7 +10,10 @@ module.exports = {
           'min': '1px', 
           'orientation': 'landscape' 
         },
-        'md': '640px',
+        'md': { 
+          'min': '680px',
+          'orientation': 'portrait'
+        },
         'mdl': { 
           'min': '960px', 
           'orientation': 'landscape' 
@@ -39,6 +42,10 @@ module.exports = {
       width: {
         'tq': '75%',
         '300': '300px'
+      },
+      height: {
+       "bodysm": 'calc(h-screen - h-12)',
+       'bodybig': 'calc(h-screen - h-20)'
       }
     },
   },

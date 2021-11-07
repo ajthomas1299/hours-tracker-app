@@ -1,7 +1,7 @@
 
 const SelectSession = () => {
   return (
-    <section className="h-20 grid place-items-center">
+    <section className="h-20 grid place-items-center mt-3 md:mt-7">
       <select className="w-3/5" name="clients" id="clients" >
         <option value="" disabled selected hidden>Select Client...</option>
         <option value="acme">acme</option>
